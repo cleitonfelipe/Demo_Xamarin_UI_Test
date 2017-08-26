@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Demo_Xamarin_UI_Test.App"
+             x:Class="Demo_Xamarin_UI_Test.App.MainPage">
+
+    <StackLayout>
+        <StackLayout Spacing="20" Padding="20" VerticalOptions="Center">
+            <Entry x:Name="txtValorUm"
+                   FontSize="Large"
+                   Placeholder="Digite o Primeiro Valor."
+                   AutomationId="txtvalorUm"/>
+
+            <Entry x:Name="txtValorDois"
+                   FontSize="Large"
+                   Placeholder="Digite o Segundo Valor."
+                   AutomationId="txtvalorDois"/>
+
+            <Button x:Name="btnSomar"
+                    AutomationId="btnSomar"
+                    Text="Somar" 
+                    TextColor="White"
+                    FontSize="Large"
+                    BackgroundColor="#77D065"
+                    Clicked="btnSomar_Clicked"/>
+
+            <Label x:Name="lblResultado" 
+                   AutomationId="lblResult"
+                   FontSize="Large"
+                   Text="Resultado"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

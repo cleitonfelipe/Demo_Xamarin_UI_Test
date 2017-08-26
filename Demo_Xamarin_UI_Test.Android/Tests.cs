@@ -23,13 +23,14 @@ namespace Demo_Xamarin_UI_Test.Android
             app = ConfigureApp
                 .Android
                 .ApkFile(@"C:\Users\omehe\Desktop\Calculadora.apk")
-                .DeviceSerial("emulator-5554")
+                //.DeviceSerial("emulator-5554")
                 .StartApp();
         }
 
         [Test]
-        public void AppLaunches()
+        public void Teste_Xamarin_Android()
         {
+            //app.Repl();
             app.EnterText(valorUm, "10");
             app.EnterText(valorDois, "10");
 

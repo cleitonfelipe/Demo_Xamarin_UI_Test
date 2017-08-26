@@ -14,8 +14,9 @@ namespace Demo_Xamarin_UI_Test.XamarinForms
             {
                 return ConfigureApp
                     .Android
-                    .ApkFile(@"C:\Projetos\Demo_TDC_XF\Demo_TDC_XF.APP\Demo_TDC_XF.APP.Android\bin\Release\Demo_TDC_XF.APP.Android.apk")
-                    .DeviceSerial("emulator-5554") //Utilizar sempre que tiver mais de um device conectado para informar qual quer utilizar.
+                    //.ApkFile(@"C:\Projetos\Demo_TDC_XF\Demo_TDC_XF.APP\Demo_TDC_XF.APP.Android\bin\Release\Demo_TDC_XF.APP.Android.apk")
+                    .InstalledApp("Demo_Xamarin_UI_Test.App.Android")
+                    //.DeviceSerial("emulator-5554") //Utilizar sempre que tiver mais de um device conectado para informar qual quer utilizar.
                     .StartApp();
             }
 

@@ -8,7 +8,7 @@ using Xamarin.UITest.Queries;
 namespace Demo_Xamarin_UI_Test.XamarinForms
 {
     [TestFixture(Platform.Android)]
-    [TestFixture(Platform.iOS)]
+    //[TestFixture(Platform.iOS)]
     public class Tests
     {
         IApp app;
@@ -31,7 +31,7 @@ namespace Demo_Xamarin_UI_Test.XamarinForms
         }
 
         [Test]
-        public void AppLaunches()
+        public void Teste_Xamarin_Forms()
         {
             app.EnterText(valorUm, "10");
             app.EnterText(valorDois, "15");
